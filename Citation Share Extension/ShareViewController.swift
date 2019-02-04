@@ -14,6 +14,7 @@ class ShareViewController: SLComposeServiceViewController {
 
     private var citationUrl: String?
     private var citationString: String?
+    private var citationHTMLString: String?
     private var citationComment: String?
 
     override func isContentValid() -> Bool {
@@ -61,6 +62,11 @@ class ShareViewController: SLComposeServiceViewController {
                                 print("URL retrieved: \(urlString) selection: \(selection)")
                             } else {
                                 print("URL retrieved: \(urlString)")
+                            }
+
+                            if let selectionHtml = results["selectionHtml"] as? String {
+                                self.citationHTMLString = selectionHtml
+                                print("selectionHtml: \(selectionHtml)")
                             }
                         }
                     }
