@@ -13,6 +13,7 @@ import MobileCoreServices
 class ShareViewController: SLComposeServiceViewController {
 
     private var citationUrl: String?
+    private var citationTitle: String?
     private var citationString: String?
     private var citationHTMLString: String?
     private var citationComment: String?
@@ -25,13 +26,15 @@ class ShareViewController: SLComposeServiceViewController {
         // Get the comment from the text view
         citationComment = textView.text
 
-        NSLog("citationUrl: \(String(describing: citationUrl)) citationString: \(String(describing: citationString)) citationComment: \(String(describing: citationComment))")
+        NSLog("citationUrl: \(String(describing: citationUrl)) citationString: \(String(describing: citationString)) citationComment: \(String(describing: citationComment)) citationTitle: \(String(describing: citationTitle))")
 
         // Create a Citation Object and persist
         let citation = Citation()
         citation.citation = citationString ?? ""
+        citation.citationHtml = citationHTMLString ?? ""
         citation.comment = citationComment ?? ""
         citation.url = citationUrl ?? ""
+        citation.title = citationTitle ?? ""
         citation.created = Date()
         citation.updated = Date()
         DBManager.shared.addCitation(object: citation)
@@ -55,18 +58,23 @@ class ShareViewController: SLComposeServiceViewController {
                     OperationQueue.main.addOperation {
                         if let results = dictionary[NSExtensionJavaScriptPreprocessingResultsKey] as? NSDictionary,
                             let urlString = results["URL"] as? String { //,
-                           // let url = NSURL(string: urlString){
+                            // let url = NSURL(string: urlString){
                             self.citationUrl = urlString
                             if let selection = results["selection"] as? String {
                                 self.citationString = selection
-                                print("URL retrieved: \(urlString) selection: \(selection)")
+                                NSLog("URL retrieved: \(urlString) selection: \(selection)")
                             } else {
-                                print("URL retrieved: \(urlString)")
+                                NSLog("URL retrieved: \(urlString)")
                             }
 
                             if let selectionHtml = results["selectionHtml"] as? String {
                                 self.citationHTMLString = selectionHtml
-                                print("selectionHtml: \(selectionHtml)")
+                                NSLog("selectionHtml: \(selectionHtml)")
+                            }
+
+                            if let title = results["title"] as? String {
+                                self.citationTitle = title
+                                NSLog("title: \(title)")
                             }
                         }
                     }

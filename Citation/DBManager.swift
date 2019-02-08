@@ -38,7 +38,7 @@ class DBManager {
         object.ID = getCitations().count
         try! database.write {
             database.add(object, update: true)
-            print("Added new object")
+            NSLog("Added new object")
         }
     }
 

@@ -15,7 +15,9 @@ import RealmSwift
 class Citation: Object {
     @objc dynamic var ID = -1
     @objc dynamic var url = ""
+    @objc dynamic var title = ""
     @objc dynamic var citation = ""
+    @objc dynamic var citationHtml = ""
     @objc dynamic var comment = ""
     @objc dynamic var created = Date()
     @objc dynamic var updated = Date()

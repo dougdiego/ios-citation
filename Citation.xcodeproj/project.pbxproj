@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0EFD9355C4E7A47F10564CCF /* Pods_Citation_Share_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C3E93BCAD63F8FA3EA3C1E /* Pods_Citation_Share_Extension.framework */; };
+		3DB8A753220A6D530009EE01 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8A752220A6D530009EE01 /* MasterViewController.swift */; };
+		3DB8A755220A6DC70009EE01 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8A754220A6DC70009EE01 /* DetailViewController.swift */; };
 		3DCE443522035A8D000FC2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE443422035A8D000FC2C3 /* AppDelegate.swift */; };
-		3DCE443722035A8D000FC2C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE443622035A8D000FC2C3 /* ViewController.swift */; };
 		3DCE443A22035A8D000FC2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCE443822035A8D000FC2C3 /* Main.storyboard */; };
 		3DCE443C22035A91000FC2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCE443B22035A91000FC2C3 /* Assets.xcassets */; };
 		3DCE443F22035A91000FC2C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCE443D22035A91000FC2C3 /* LaunchScreen.storyboard */; };
@@ -30,6 +31,8 @@
 		3DCE448F2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE448D2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift */; };
 		3DCE449122051A6E000FC2C3 /* CitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */; };
 		3DCE449222051A6E000FC2C3 /* CitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */; };
+		3DFE0BF4220C9115008B1876 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE0BF3220C9115008B1876 /* EmptyViewController.swift */; };
+		3DFE0BFA220D101D008B1876 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE0BF9220D101D008B1876 /* Notification.swift */; };
 		A597059C186A1C7C0486E63C /* Pods_Citation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A8A5CA3CAB2B526F957E78 /* Pods_Citation.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,9 +75,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3DB8A752220A6D530009EE01 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		3DB8A754220A6DC70009EE01 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3DCE443122035A8D000FC2C3 /* Citation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Citation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCE443422035A8D000FC2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DCE443622035A8D000FC2C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DCE443922035A8D000FC2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DCE443B22035A91000FC2C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DCE443E22035A91000FC2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		3DCE448A22051375000FC2C3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		3DCE448D2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Activate.swift"; sourceTree = "<group>"; };
 		3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitationTableViewCell.swift; sourceTree = "<group>"; };
+		3DFE0BF3220C9115008B1876 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		3DFE0BF9220D101D008B1876 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		8BB40B14256E378A0C72F98C /* Pods-Citation Share Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citation Share Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Citation Share Extension/Pods-Citation Share Extension.release.xcconfig"; sourceTree = "<group>"; };
 		9C8F76C0163F4A7D24A3CFE2 /* Pods-Citation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Citation/Pods-Citation.debug.xcconfig"; sourceTree = "<group>"; };
 		A5A8A5CA3CAB2B526F957E78 /* Pods_Citation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Citation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,7 +176,6 @@
 				3DCE44842204AAED000FC2C3 /* Citation.swift */,
 				3DCE44802204A4EE000FC2C3 /* Citation.entitlements */,
 				3DCE443422035A8D000FC2C3 /* AppDelegate.swift */,
-				3DCE443622035A8D000FC2C3 /* ViewController.swift */,
 				3DCE443822035A8D000FC2C3 /* Main.storyboard */,
 				3DCE443B22035A91000FC2C3 /* Assets.xcassets */,
 				3DCE443D22035A91000FC2C3 /* LaunchScreen.storyboard */,
@@ -179,6 +184,10 @@
 				3DCE448A22051375000FC2C3 /* DBManager.swift */,
 				3DCE448D2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift */,
 				3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */,
+				3DB8A752220A6D530009EE01 /* MasterViewController.swift */,
+				3DB8A754220A6DC70009EE01 /* DetailViewController.swift */,
+				3DFE0BF3220C9115008B1876 /* EmptyViewController.swift */,
+				3DFE0BF9220D101D008B1876 /* Notification.swift */,
 			);
 			path = Citation;
 			sourceTree = "<group>";
@@ -519,12 +528,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB8A755220A6DC70009EE01 /* DetailViewController.swift in Sources */,
+				3DB8A753220A6D530009EE01 /* MasterViewController.swift in Sources */,
+				3DFE0BF4220C9115008B1876 /* EmptyViewController.swift in Sources */,
 				3DCE449122051A6E000FC2C3 /* CitationTableViewCell.swift in Sources */,
 				3DCE448E2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift in Sources */,
 				3DCE448B22051375000FC2C3 /* DBManager.swift in Sources */,
 				3DCE44852204AAED000FC2C3 /* Citation.swift in Sources */,
 				3DCE448822050EC6000FC2C3 /* UIView+AutoLayout.swift in Sources */,
-				3DCE443722035A8D000FC2C3 /* ViewController.swift in Sources */,
+				3DFE0BFA220D101D008B1876 /* Notification.swift in Sources */,
 				3DCE443522035A8D000FC2C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
