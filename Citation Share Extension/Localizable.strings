@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Citation
+
+  Created by Doug Diego on 2/15/19.
+  Copyright © 2019 Doug Diego. All rights reserved.
+*/
+"common_ok" = "OK";
+"common_cancel" = "Cancel";
+
+"tag_enter_tag" = "Enter a new tag";

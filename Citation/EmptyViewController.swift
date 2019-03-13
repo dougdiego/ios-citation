@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import os.log
 
 class EmptyViewController: UIViewController {
-
+    private let log = OSLog(category: "MasterViewController")
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var iPhoneImageAspectConstraint: NSLayoutConstraint!
     @IBOutlet weak var iPadImageAspectConstraint: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSLog("EmptyViewController.viewDidLoad")
+        log.debug("EmptyViewController.viewDidLoad")
         if UIDevice.current.userInterfaceIdiom == .pad {
             imageView.image = UIImage(named: "ipad1")
             imageView.removeConstraint(iPhoneImageAspectConstraint)
@@ -32,11 +33,11 @@ class EmptyViewController: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NSLog("EmptyViewController.viewWillDisappear")
+        log.debug("EmptyViewController.viewWillDisappear")
     }
 
     @objc func dismissEmptyModal(notification: NSNotification) {
-        NSLog("dismissEmptyModal()  notification: %s", String(describing: notification))
+        log.debug("dismissEmptyModal()  notification: %s", String(describing: notification))
         self.dismiss(animated: false, completion: nil)
     }
 }

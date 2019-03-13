@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0EFD9355C4E7A47F10564CCF /* Pods_Citation_Share_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C3E93BCAD63F8FA3EA3C1E /* Pods_Citation_Share_Extension.framework */; };
+		3D2E46AC2215CADD00C37A6E /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46AB2215CADD00C37A6E /* TagViewController.swift */; };
+		3D2E46AE2215CAFD00C37A6E /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46AD2215CAFD00C37A6E /* TagViewModel.swift */; };
+		3D2E46AF2215CB0A00C37A6E /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46AB2215CADD00C37A6E /* TagViewController.swift */; };
+		3D2E46B02215CB0A00C37A6E /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46AD2215CAFD00C37A6E /* TagViewModel.swift */; };
+		3D2E46B22215CBC800C37A6E /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46B12215CBC800C37A6E /* OSLog.swift */; };
+		3D2E46B32215CF3A00C37A6E /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46B12215CBC800C37A6E /* OSLog.swift */; };
+		3D2E46B52215CFE700C37A6E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46B42215CFE700C37A6E /* Tag.swift */; };
+		3D2E46B72215D0AB00C37A6E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D2E46B62215D0AB00C37A6E /* Localizable.strings */; };
+		3D2E46BF221646EE00C37A6E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E46B42215CFE700C37A6E /* Tag.swift */; };
+		3D2ECDEC2236B3B7004FAFA8 /* DividerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2ECDEB2236B3B7004FAFA8 /* DividerTableViewCell.swift */; };
+		3D2ECDEE22373730004FAFA8 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2ECDED22373730004FAFA8 /* NSMutableAttributedString+Extension.swift */; };
 		3DB8A753220A6D530009EE01 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8A752220A6D530009EE01 /* MasterViewController.swift */; };
 		3DB8A755220A6DC70009EE01 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8A754220A6DC70009EE01 /* DetailViewController.swift */; };
 		3DCE443522035A8D000FC2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE443422035A8D000FC2C3 /* AppDelegate.swift */; };
@@ -31,8 +42,14 @@
 		3DCE448F2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE448D2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift */; };
 		3DCE449122051A6E000FC2C3 /* CitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */; };
 		3DCE449222051A6E000FC2C3 /* CitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */; };
+		3DE337D52231F80E00B70DE9 /* CitationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE337D42231F80E00B70DE9 /* CitationListTableViewCell.swift */; };
+		3DE337DD223201B000B70DE9 /* ListPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE337DC223201B000B70DE9 /* ListPopupViewController.swift */; };
+		3DE337DF2232020300B70DE9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE337DE2232020300B70DE9 /* SettingsViewController.swift */; };
+		3DE337E32232C89A00B70DE9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE337E22232C89A00B70DE9 /* Colors.xcassets */; };
+		3DE338072233472300B70DE9 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE338062233472300B70DE9 /* DetailViewModel.swift */; };
 		3DFE0BF4220C9115008B1876 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE0BF3220C9115008B1876 /* EmptyViewController.swift */; };
 		3DFE0BFA220D101D008B1876 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE0BF9220D101D008B1876 /* Notification.swift */; };
+		91CBBF232217324F003B3821 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91CBBF222217324F003B3821 /* Localizable.strings */; };
 		A597059C186A1C7C0486E63C /* Pods_Citation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A8A5CA3CAB2B526F957E78 /* Pods_Citation.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +92,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D2E46AB2215CADD00C37A6E /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		3D2E46AD2215CAFD00C37A6E /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		3D2E46B12215CBC800C37A6E /* OSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
+		3D2E46B42215CFE700C37A6E /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		3D2E46B62215D0AB00C37A6E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3D2ECDEB2236B3B7004FAFA8 /* DividerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerTableViewCell.swift; sourceTree = "<group>"; };
+		3D2ECDED22373730004FAFA8 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		3DB8A752220A6D530009EE01 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		3DB8A754220A6DC70009EE01 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3DCE443122035A8D000FC2C3 /* Citation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Citation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,9 +126,15 @@
 		3DCE448A22051375000FC2C3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		3DCE448D2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Activate.swift"; sourceTree = "<group>"; };
 		3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitationTableViewCell.swift; sourceTree = "<group>"; };
+		3DE337D42231F80E00B70DE9 /* CitationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitationListTableViewCell.swift; sourceTree = "<group>"; };
+		3DE337DC223201B000B70DE9 /* ListPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPopupViewController.swift; sourceTree = "<group>"; };
+		3DE337DE2232020300B70DE9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3DE337E22232C89A00B70DE9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3DE338062233472300B70DE9 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		3DFE0BF3220C9115008B1876 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		3DFE0BF9220D101D008B1876 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		8BB40B14256E378A0C72F98C /* Pods-Citation Share Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citation Share Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Citation Share Extension/Pods-Citation Share Extension.release.xcconfig"; sourceTree = "<group>"; };
+		91CBBF222217324F003B3821 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9C8F76C0163F4A7D24A3CFE2 /* Pods-Citation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Citation/Pods-Citation.debug.xcconfig"; sourceTree = "<group>"; };
 		A5A8A5CA3CAB2B526F957E78 /* Pods_Citation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Citation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEF0063B54EB21058A131AF /* Pods-Citation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Citation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Citation/Pods-Citation.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,21 +203,33 @@
 		3DCE443322035A8D000FC2C3 /* Citation */ = {
 			isa = PBXGroup;
 			children = (
-				3DCE44842204AAED000FC2C3 /* Citation.swift */,
-				3DCE44802204A4EE000FC2C3 /* Citation.entitlements */,
 				3DCE443422035A8D000FC2C3 /* AppDelegate.swift */,
-				3DCE443822035A8D000FC2C3 /* Main.storyboard */,
 				3DCE443B22035A91000FC2C3 /* Assets.xcassets */,
-				3DCE443D22035A91000FC2C3 /* LaunchScreen.storyboard */,
-				3DCE444022035A91000FC2C3 /* Info.plist */,
-				3DCE448722050EC6000FC2C3 /* UIView+AutoLayout.swift */,
-				3DCE448A22051375000FC2C3 /* DBManager.swift */,
-				3DCE448D2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift */,
+				3DCE44802204A4EE000FC2C3 /* Citation.entitlements */,
+				3DCE44842204AAED000FC2C3 /* Citation.swift */,
+				3DE337D42231F80E00B70DE9 /* CitationListTableViewCell.swift */,
 				3DCE449022051A6E000FC2C3 /* CitationTableViewCell.swift */,
-				3DB8A752220A6D530009EE01 /* MasterViewController.swift */,
+				3DE337E22232C89A00B70DE9 /* Colors.xcassets */,
+				3DCE448A22051375000FC2C3 /* DBManager.swift */,
 				3DB8A754220A6DC70009EE01 /* DetailViewController.swift */,
+				3DE338062233472300B70DE9 /* DetailViewModel.swift */,
+				3D2ECDEB2236B3B7004FAFA8 /* DividerTableViewCell.swift */,
 				3DFE0BF3220C9115008B1876 /* EmptyViewController.swift */,
+				3DCE444022035A91000FC2C3 /* Info.plist */,
+				3DCE443D22035A91000FC2C3 /* LaunchScreen.storyboard */,
+				3DE337DC223201B000B70DE9 /* ListPopupViewController.swift */,
+				3D2E46B62215D0AB00C37A6E /* Localizable.strings */,
+				3DCE443822035A8D000FC2C3 /* Main.storyboard */,
+				3DB8A752220A6D530009EE01 /* MasterViewController.swift */,
 				3DFE0BF9220D101D008B1876 /* Notification.swift */,
+				3DCE448D2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift */,
+				3D2E46B12215CBC800C37A6E /* OSLog.swift */,
+				3DE337DE2232020300B70DE9 /* SettingsViewController.swift */,
+				3D2E46B42215CFE700C37A6E /* Tag.swift */,
+				3D2E46AB2215CADD00C37A6E /* TagViewController.swift */,
+				3D2E46AD2215CAFD00C37A6E /* TagViewModel.swift */,
+				3DCE448722050EC6000FC2C3 /* UIView+AutoLayout.swift */,
+				3D2ECDED22373730004FAFA8 /* NSMutableAttributedString+Extension.swift */,
 			);
 			path = Citation;
 			sourceTree = "<group>";
@@ -219,6 +261,7 @@
 				3DCE446D22035B1D000FC2C3 /* Info.plist */,
 				3DCE447622035C8B000FC2C3 /* GetURL.js */,
 				3DCE447E2203D10E000FC2C3 /* Deck.swift */,
+				91CBBF222217324F003B3821 /* Localizable.strings */,
 			);
 			path = "Citation Share Extension";
 			sourceTree = "<group>";
@@ -385,7 +428,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE337E32232C89A00B70DE9 /* Colors.xcassets in Resources */,
 				3DCE443F22035A91000FC2C3 /* LaunchScreen.storyboard in Resources */,
+				3D2E46B72215D0AB00C37A6E /* Localizable.strings in Resources */,
 				3DCE443C22035A91000FC2C3 /* Assets.xcassets in Resources */,
 				3DCE443A22035A8D000FC2C3 /* Main.storyboard in Resources */,
 			);
@@ -410,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCE446C22035B1D000FC2C3 /* MainInterface.storyboard in Resources */,
+				91CBBF232217324F003B3821 /* Localizable.strings in Resources */,
 				3DCE447722035C8B000FC2C3 /* GetURL.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +472,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Citation/Pods-Citation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -433,6 +481,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -530,12 +580,22 @@
 			files = (
 				3DB8A755220A6DC70009EE01 /* DetailViewController.swift in Sources */,
 				3DB8A753220A6D530009EE01 /* MasterViewController.swift in Sources */,
+				3D2ECDEE22373730004FAFA8 /* NSMutableAttributedString+Extension.swift in Sources */,
+				3D2ECDEC2236B3B7004FAFA8 /* DividerTableViewCell.swift in Sources */,
 				3DFE0BF4220C9115008B1876 /* EmptyViewController.swift in Sources */,
 				3DCE449122051A6E000FC2C3 /* CitationTableViewCell.swift in Sources */,
+				3DE337D52231F80E00B70DE9 /* CitationListTableViewCell.swift in Sources */,
 				3DCE448E2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift in Sources */,
+				3D2E46AE2215CAFD00C37A6E /* TagViewModel.swift in Sources */,
+				3DE337DD223201B000B70DE9 /* ListPopupViewController.swift in Sources */,
 				3DCE448B22051375000FC2C3 /* DBManager.swift in Sources */,
+				3D2E46AC2215CADD00C37A6E /* TagViewController.swift in Sources */,
 				3DCE44852204AAED000FC2C3 /* Citation.swift in Sources */,
 				3DCE448822050EC6000FC2C3 /* UIView+AutoLayout.swift in Sources */,
+				3DE337DF2232020300B70DE9 /* SettingsViewController.swift in Sources */,
+				3DE338072233472300B70DE9 /* DetailViewModel.swift in Sources */,
+				3D2E46B52215CFE700C37A6E /* Tag.swift in Sources */,
+				3D2E46B22215CBC800C37A6E /* OSLog.swift in Sources */,
 				3DFE0BFA220D101D008B1876 /* Notification.swift in Sources */,
 				3DCE443522035A8D000FC2C3 /* AppDelegate.swift in Sources */,
 			);
@@ -565,7 +625,11 @@
 				3DCE448F2205156F000FC2C3 /* NSLayoutConstraint+Activate.swift in Sources */,
 				3DCE448C22051375000FC2C3 /* DBManager.swift in Sources */,
 				3DCE44862204AAED000FC2C3 /* Citation.swift in Sources */,
+				3D2E46B32215CF3A00C37A6E /* OSLog.swift in Sources */,
 				3DCE448922050EC6000FC2C3 /* UIView+AutoLayout.swift in Sources */,
+				3D2E46BF221646EE00C37A6E /* Tag.swift in Sources */,
+				3D2E46B02215CB0A00C37A6E /* TagViewModel.swift in Sources */,
+				3D2E46AF2215CB0A00C37A6E /* TagViewController.swift in Sources */,
 				3DCE447F2203D10E000FC2C3 /* Deck.swift in Sources */,
 				3DCE446922035B1D000FC2C3 /* ShareViewController.swift in Sources */,
 			);

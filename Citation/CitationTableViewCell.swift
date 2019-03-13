@@ -27,8 +27,8 @@ class CitationTableViewCell: UITableViewCell {
 
         citationLabel.leadingAnchor.constraint(equalTo: self.contentView.layoutMarginsGuide.leadingAnchor).activate()
         citationLabel.trailingAnchor.constraint(equalTo: self.contentView.layoutMarginsGuide.trailingAnchor).activate()
-        citationLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -20).activate()
-        citationLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 20).activate()
+        citationLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -8).activate()
+        citationLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 8).activate()
     }
 
     required init?(coder aDecoder: NSCoder) {

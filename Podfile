@@ -10,6 +10,7 @@ end
 
 target "Citation" do
 	common_pods
+ 	pod 'PopupDialog', '~> 0.9'
 end
 
 target "Citation Share Extension" do 

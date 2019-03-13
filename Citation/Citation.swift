@@ -19,8 +19,12 @@ class Citation: Object {
     @objc dynamic var citation = ""
     @objc dynamic var citationHtml = ""
     @objc dynamic var comment = ""
+    @objc dynamic var screenshotUrl = ""
+    @objc dynamic var pdfUrl = ""
+    @objc dynamic var bodyText = ""
     @objc dynamic var created = Date()
     @objc dynamic var updated = Date()
+    var tags = List<Tag>()
 
     override static func primaryKey() -> String? {
         return "ID"

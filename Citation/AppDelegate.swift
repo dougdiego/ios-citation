@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        customizeInterface()
+
         guard let splitViewController = window?.rootViewController as? UISplitViewController,
             let leftNavController = splitViewController.viewControllers.first as? UINavigationController,
             let masterViewController = leftNavController.topViewController as? MasterViewController,
@@ -24,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let citations = DBManager.shared.getCitations()
         if citations.count > 0 {
-            detailViewController.citation = citations[0]
+            detailViewController.setCitation(citations[0])
         }
 
         masterViewController.delegate = detailViewController
@@ -63,6 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    func customizeInterface() {
+        UINavigationBar.appearance().tintColor = UIColor(named: "Theme")
     }
 
 }

@@ -9,14 +9,17 @@
 import UIKit
 import Social
 import MobileCoreServices
+import os.log
+import RealmSwift
 
 class ShareViewController: SLComposeServiceViewController {
-
+    private let log = OSLog(category: "ShareViewController")
     private var citationUrl: String?
     private var citationTitle: String?
     private var citationString: String?
     private var citationHTMLString: String?
     private var citationComment: String?
+    private var citationTags: [Tag]? = []
 
     override func isContentValid() -> Bool {
         return true
@@ -26,7 +29,9 @@ class ShareViewController: SLComposeServiceViewController {
         // Get the comment from the text view
         citationComment = textView.text
 
-        NSLog("citationUrl: \(String(describing: citationUrl)) citationString: \(String(describing: citationString)) citationComment: \(String(describing: citationComment)) citationTitle: \(String(describing: citationTitle))")
+        log.debug("citationUrl: %s citationString: %s citationComment: %s citationTitle: %s",
+                  String(describing: citationUrl), String(describing: citationString),
+                  String(describing: citationComment), String(describing: citationTitle))
 
         // Create a Citation Object and persist
         let citation = Citation()
@@ -37,12 +42,39 @@ class ShareViewController: SLComposeServiceViewController {
         citation.title = citationTitle ?? ""
         citation.created = Date()
         citation.updated = Date()
+        if let citationTags = citationTags {
+            for tag in citationTags {
+                citation.tags.append(tag)
+            }
+        }
+
         DBManager.shared.addCitation(object: citation)
 
         self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
     }
 
     override func configurationItems() -> [Any]! {
+        log.debug("configurationItems()")
+        if let deck = SLComposeSheetConfigurationItem() {
+            deck.title = "Tags"
+            if let citationTags = citationTags, citationTags.count > 0 {
+                let tags = citationTags.map {$0.tag}
+                deck.value = tags.joined(separator: ", ")
+            } else {
+                deck.value = ""
+            }
+            deck.tapHandler = {
+                let vm = TagViewModel()
+                vm.tagView = .user
+                if let citationTags = self.citationTags, citationTags.count > 0 {
+                    vm.selectedTags = citationTags
+                }
+                let vc = TagViewController(viewModel: vm)
+                vc.delegate = self
+                self.pushConfigurationViewController(vc)
+            }
+            return [deck]
+        }
         return nil
     }
 
@@ -62,28 +94,36 @@ class ShareViewController: SLComposeServiceViewController {
                             self.citationUrl = urlString
                             if let selection = results["selection"] as? String {
                                 self.citationString = selection
-                                NSLog("URL retrieved: \(urlString) selection: \(selection)")
+                                self.log.debug("URL retrieved: %s selection: %s", urlString, selection)
                             } else {
-                                NSLog("URL retrieved: \(urlString)")
+                                self.log.debug("URL retrieved: %s", urlString)
                             }
 
                             if let selectionHtml = results["selectionHtml"] as? String {
                                 self.citationHTMLString = selectionHtml
-                                NSLog("selectionHtml: \(selectionHtml)")
+                                self.log.debug("selectionHtml: %s", selectionHtml)
                             }
 
                             if let title = results["title"] as? String {
                                 self.citationTitle = title
-                                NSLog("title: \(title)")
+                                self.log.debug("title: %s", title)
                             }
                         }
                     }
                 })
             } else {
-                NSLog("error")
+                log.error("error")
             }
         } else {
-            NSLog("error")
+            log.error("error")
         }
+    }
+}
+
+extension ShareViewController: TagViewControllerDelegate {
+    func selectedTags(tags: [Tag]?) {
+        log.debug("selectedTags() tags: %s", String(describing: tags))
+        self.citationTags = tags
+        reloadConfigurationItems() // calls configurationItems
     }
 }
