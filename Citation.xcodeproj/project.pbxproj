@@ -807,13 +807,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Citation/Citation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JE72PBD59N;
+				DEVELOPMENT_TEAM = V6HBKZC833;
 				INFOPLIST_FILE = Citation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.diego.ios.Citation;
+				PRODUCT_BUNDLE_IDENTIFIER = org.diego.citation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -828,13 +828,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Citation/Citation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JE72PBD59N;
+				DEVELOPMENT_TEAM = V6HBKZC833;
 				INFOPLIST_FILE = Citation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.diego.ios.Citation;
+				PRODUCT_BUNDLE_IDENTIFIER = org.diego.citation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -929,14 +929,14 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Citation Share Extension/Citation Share Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JE72PBD59N;
+				DEVELOPMENT_TEAM = V6HBKZC833;
 				INFOPLIST_FILE = "Citation Share Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.diego.ios.Citation.Citation-Share-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.diego.citation.Citation-Share-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -950,14 +950,14 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Citation Share Extension/Citation Share Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JE72PBD59N;
+				DEVELOPMENT_TEAM = V6HBKZC833;
 				INFOPLIST_FILE = "Citation Share Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.diego.ios.Citation.Citation-Share-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.diego.citation.Citation-Share-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;

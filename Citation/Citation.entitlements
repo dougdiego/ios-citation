@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.org.diego.ios.Citation</string>
+		<string>group.org.diego.citation</string>
 	</array>
 </dict>
 </plist>

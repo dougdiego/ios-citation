@@ -18,7 +18,7 @@ class DBManager {
     private init() {
         // Save Realm to Shared Group:
         let fileURL = FileManager.default
-            .containerURL(forSecurityApplicationGroupIdentifier: "group.org.diego.ios.Citation")!
+            .containerURL(forSecurityApplicationGroupIdentifier: "group.org.diego.citation")!
             .appendingPathComponent("default.realm")
         log.info("realm: %s", String(describing: fileURL))
         let config = Realm.Configuration(fileURL: fileURL)
